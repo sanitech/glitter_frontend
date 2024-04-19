@@ -1,13 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root{
+  --primary-color:#0047AB;
+  --secondary-color:#FFA500;
+  --tertiary:#CCCCCC;
+}
+@font-face {
+  font-family: "safety";
+  src: url(./assets/fonts/SafetyMedium.otf);
+}
+
+.background {
+  background-image: linear-gradient(
+    280deg,
+    rgba(0, 0, 0, 0.807),
+      rgba(0, 0, 0, 0.871)
+    ),
+    url(./assets/images/fe-30.jpg); 
+  background-color: #f0f0f0; /* fallback color */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.overplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    280deg,
+    rgba(0, 0, 0, 0.807),
+      rgba(0, 0, 0, 0.871)
+    );
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.slidercontainer:hover .slider{
+  display: block;
+  transform: translateX(0%);
+  transition: 0.8s;
+}
+.slidercontainer{
+  overflow:hidden ;
+}
+.slider{
+  display: none;
+  transform: translateX(-100%); 
 }

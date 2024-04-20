@@ -9,6 +9,7 @@ import EventPricingSection from "../Components/Event/EventPriceingSection";
 import EventCard2 from "../Components/Event/EventCard2";
 import EventLis from "../Components/Event/EventLis";
 import Faq from "../Components/FAQ/Faq";
+import Footer from "../Components/Footer/Footer";
 
 function Events() {
   return (
@@ -16,6 +17,7 @@ function Events() {
       <EventHero />
       <EventLis/>
       <Faq />
+      <Footer />
      
     </div>
   );

@@ -11,7 +11,9 @@ import BlogDetail from "./Pages/BlogDetail";
 import Blog from "./Pages/Blog";
 import Organizers from "./Pages/organizers";
 import ScrollToTop from "./ScrollTop";
-
+import Product from "./Pages/Product";
+import './style.css'
+// import './AppJs.js'
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -41,13 +43,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<About isDarkMode={isDarkMode} />} />
-        <Route path="/organizer" element={<Organizers isDarkMode={isDarkMode} />} />
+        <Route
+          path="/organizer"
+          element={<Organizers isDarkMode={isDarkMode} />}
+        />
         <Route
           path="/blog/:id"
           element={<BlogDetail isDarkMode={isDarkMode} />}
         />
         <Route path="/events" element={<Events isDarkMode={isDarkMode} />} />
         <Route path="/blog" element={<Blog isDarkMode={isDarkMode} />} />
+        <Route path="/products" element={<Product isDarkMode={isDarkMode} />} />
         <Route
           path="/events/:id"
           element={<EventDetail isDarkMode={isDarkMode} />}

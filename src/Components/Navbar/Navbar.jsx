@@ -100,8 +100,13 @@ function Navbar({isDarkMode}) {
               >
                 Organizer
               </Link>
+              <Link to="/products"
+                class="font-medium text-gray-100 hover:text-gray-200 md:py-6 text-lg dark:text-gray-800 dark:hover:text-gray-600"
+              >
+                Product
+              </Link>
 
-              <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4 text-lg">
+              {/* <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4 text-lg">
                 <button
                   type="button"
                   class="flex items-center w-full text-gray-100 hover:text-gray-200 font-medium dark:text-gray-800 dark:hover:text-gray-600 text-lg"
@@ -187,7 +192,7 @@ function Navbar({isDarkMode}) {
                     Team Account
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               <a
                 class="flex items-center gap-x-2 font-medium text-gray-100 hover:text-orange-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 dark:text-gray-800 dark:hover:text-orange-500"

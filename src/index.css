@@ -10,6 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -31,7 +35,7 @@ code {
       rgba(0, 0, 0, 0.871)
     ),
     url(./assets/images/fe-30.jpg); 
-  background-color: #f0f0f0; /* fallback color */
+  background-color: #000000; /* fallback color */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

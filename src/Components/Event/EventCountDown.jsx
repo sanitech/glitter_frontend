@@ -1,73 +1,39 @@
 import { useCallback, useEffect, useState } from "react";
-const EventCountDown = () => {
-  const [countDownTime, setCountDownTIme] = useState({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
-  const getTimeDifference = (countDownTime) => {
-    const currentTime = new Date().getTime();
-    const timeDiffrence = countDownTime - currentTime;
-    let days =
-      Math.floor(timeDiffrence / (24 * 60 * 60 * 1000)) >= 10
-        ? Math.floor(timeDiffrence / (24 * 60 * 60 * 1000))
-        : `0${Math.floor(timeDiffrence / (24 * 60 * 60 * 1000))}`;
-    const hours =
-      Math.floor((timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)) >=
-      10
-        ? Math.floor((timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60))
-        : `0${Math.floor(
-            (timeDiffrence % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
-          )}`;
-    const minutes =
-      Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60)) >= 10
-        ? Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60))
-        : `0${Math.floor((timeDiffrence % (60 * 60 * 1000)) / (1000 * 60))}`;
-    const seconds =
-      Math.floor((timeDiffrence % (60 * 1000)) / 1000) >= 10
-        ? Math.floor((timeDiffrence % (60 * 1000)) / 1000)
-        : `0${Math.floor((timeDiffrence % (60 * 1000)) / 1000)}`;
-    if (timeDiffrence < 0) {
-      setCountDownTIme({
-        days: "00",
-        hours: "00",
-        minutes: "00",
-        seconds: "00",
-      });
-      clearInterval();
-    } else {
-      setCountDownTIme({
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds,
-      });
+import Countdown from "react-countdown";
+const EventCountDown = ({ targetDate }) => {
+  
+  const calculateTimeLeft = () => {
+    const difference = targetDate - new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
+      };
     }
+
+    return timeLeft;
   };
-  const startCountDown = useCallback(() => {
-    const customDate = new Date();
-    const countDownDate = new Date(
-      customDate.getFullYear(),
-      customDate.getMonth() + 1,
-      customDate.getDate() + 6,
-      customDate.getHours(),
-      customDate.getMinutes(),
-      customDate.getSeconds() + 1
-    );
-    setInterval(() => {
-      getTimeDifference(countDownDate.getTime());
-    }, 1000);
-  }, []);
+
+  const [countDownTime, setCountDownTime] = useState(calculateTimeLeft());
+
   useEffect(() => {
-    startCountDown();
-  }, [startCountDown]);
+    const timer = setTimeout(() => {
+      setCountDownTime(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
   return (
     <div className="absolute     bottom-0 right-0  py-5">
       <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-8 px-20">
         <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
           Act Now, Time is Short
         </span>
+        {/* {timerComponents.length ? timerComponents : <span>Time's up!</span>} */}
         <div className="flex justify-center gap-3 sm:gap-8">
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center backdrop-blur-lg rounded-lg">

@@ -3,16 +3,16 @@ import React from 'react'
 function FeatureSection() {
   return (
     <div>
-    <div class="bg-neutral-950">
+    <div class="bg-neutral-950" id='getStart'>
       <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
         <div class="max-w-3xl mb-10 lg:mb-14">
           <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Our approach</h2>
-          <p class="mt-1 text-neutral-400">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+          <p class="mt-1 text-neutral-400">At Glitter Trading, we navigate East Africa's economic landscape with precision, leveraging strategic partnerships and tailored solutions to empower businesses. Our approach blends meticulous execution with continuous evaluation, driving impactful growth and fostering sustainable development.</p>
         </div>
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
           <div class="aspect-w-16 aspect-h-9 lg:aspect-none">
-            <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image Description"/>
+            <img class="w-full object-cover rounded-xl" src="https://www.pngitem.com/pimgs/m/356-3560753_people-illustration-hd-png-download.png" alt="Image Description"/>
           </div>
          
     
@@ -41,8 +41,8 @@ function FeatureSection() {
               
               <div class="grow pt-0.5 pb-8 sm:pb-12">
                 <p class="text-sm lg:text-base text-neutral-400">
-                  <span class="text-white">Market Research and Analysis:</span>
-                  Identify your target audience and understand their needs, preferences, and behaviors.
+                  <span class="text-white">Understanding Stakeholder Needs:</span>
+                  We begin by thoroughly understanding the needs and challenges of our stakeholders, including governments, private sectors, corporate entities, women entrepreneurs, and SMEs in East Africa
                 </p>
               </div>
               
@@ -64,8 +64,8 @@ function FeatureSection() {
               
               <div class="grow pt-0.5 pb-8 sm:pb-12">
                 <p class="text-sm lg:text-base text-neutral-400">
-                  <span class="text-white">Product Development and Testing:</span>
-                  Develop digital products or services that address the needs and preferences of your target audience.
+                  <span class="text-white">Strategic Partnership Formation:</span>
+                  Next, we strategically form partnerships with diverse stakeholders, fostering collaboration and synergy to address identified needs effectively.
                 </p>
               </div>
               
@@ -87,8 +87,8 @@ function FeatureSection() {
               
               <div class="grow pt-0.5 pb-8 sm:pb-12">
                 <p class="text-sm md:text-base text-neutral-400">
-                  <span class="text-white">Marketing and Promotion:</span>
-                  Develop a comprehensive marketing strategy to promote your digital products or services.
+                  <span class="text-white">Implementation and Execution:</span>
+                  We meticulously execute our programs, initiatives, and events, ensuring seamless implementation and delivery of impactful outcomes.
                 </p>
               </div>
               
@@ -107,8 +107,8 @@ function FeatureSection() {
     
               <div class="grow pt-0.5 pb-8 sm:pb-12">
                 <p class="text-sm md:text-base text-neutral-400">
-                  <span class="text-white">Launch and Optimization:</span>
-                  Launch your digital products or services to the market, closely monitoring their performance and user feedback.
+                  <span class="text-white"> Knowledge Sharing and Capacity Building:</span>
+                  We actively promote knowledge sharing and capacity building among stakeholders, facilitating skill development, networking opportunities, and access to resources.
                 </p>
               </div>
             </div>

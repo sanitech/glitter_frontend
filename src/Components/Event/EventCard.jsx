@@ -1,25 +1,29 @@
 import React from "react";
-import './EventCard.css';
+import "./EventCard.css";
 import { Link } from "react-router-dom";
-function EventCard() {
+import kaze from "../../assets/images/kaz.jpg";
+function EventCard({ event, eventDate }) {
   return (
     <div className="">
-    <Link to="/events/n" class="flex bg-white transition hover:shadow-xl my-4">
+      <Link
+        to={`/events/${event.eventId}`}
+        class="flex bg-white transition hover:shadow-xl my-4"
+      >
         <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
           <time
             datetime="2022-10-10"
-            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+            class="flex items-center justify-between gap-4 text-sm font-bold uppercase text-gray-900"
           >
-            <span>2022</span>
+            <span>{eventDate[1]}</span>
             <span class="w-px flex-1 bg-gray-900/10"></span>
-            <span>Oct 10</span>
+            <span>{`${eventDate[0]}`}</span>
           </time>
         </div>
 
         <div class="hidden sm:block sm:basis-56">
           <img
             alt=""
-            src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            src={event?.banner}
             class="aspect-square h-full w-full object-cover"
           />
         </div>
@@ -28,26 +32,21 @@ function EventCard() {
           <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
             <a href="#">
               <h3 class="font-bold uppercase text-gray-900">
-                Finding the right guitar for your style - 5 tips
+                {event.eventName}
               </h3>
             </a>
 
             <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Recusandae dolores, possimus pariatur animi temporibus nesciunt
-              praesentium dolore sed nulla ipsum eveniet corporis quidem,
-              mollitia itaque minus soluta, voluptates neque explicabo tempora
-              nisi culpa eius atque dignissimos. Molestias explicabo corporis
-              voluptatem?
+              {event.eventDescription}
             </p>
           </div>
 
           <div class="sm:flex sm:items-end sm:justify-end">
             <a
               href="#"
-              class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+              class="block bg-orange-500 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
             >
-              Read Blog
+              Read More
             </a>
           </div>
         </div>

@@ -22,13 +22,12 @@ const ProductHero = () => {
     );
     console.log("index", currentIndex);
   };
-//   let carouselDom = document.querySelector('.carousel');
-//   let SliderDom = carouselDom.querySelector(".carousel .list");
+  //   let carouselDom = document.querySelector('.carousel');
+  //   let SliderDom = carouselDom.querySelector(".carousel .list");
 
-//   let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
-  
+  //   let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
+
   useEffect(() => {
-    
     const intervalId = setInterval(() => {
       if (currentNumber === SliderItems.length - 1) {
         setCurrentNumber(-1);
@@ -45,24 +44,24 @@ const ProductHero = () => {
       <div class="carousel">
         <div class="list">
           {/* {SliderItems.map((item, index) => ( */}
-            <div
-            //   key={index}
-              className={ "item"}
-            >
-              <img src={currentSlide.img} />
+          <div
+            // key={index}
+            className={"item"}
+          >
+            <img src={currentSlide.img} />
+            <div className="bg-blend-overlay w-full  h-screen bg-gradient-to-b from-gray-900/50 to-gray-500/50 py-20 px-20 ">
               <div class="content">
                 <div class="author">{currentSlide.author}</div>
                 <div class="title">{currentSlide.title}</div>
                 <div class="topic">{currentSlide.topic}</div>
-                <div class="des">
-                 {currentSlide.desc}
-                </div>
+                <div class="des">{currentSlide.desc}</div>
                 <div class="buttons">
-                  <button>SEE MORE</button>
-                  <button>SUBSCRIBE</button>
+                  <button className="bg-orange-500">SEE MORE</button>
+                  <button className="border-2 border-orange-500">SUBSCRIBE</button>
                 </div>
               </div>
             </div>
+          </div>
           {/* ))} */}
           {/* 
             <div class="item">
@@ -116,7 +115,7 @@ const ProductHero = () => {
         </div>
         <div class="thumbnail">
           {heroSlider.map((item, index) => (
-            <div class="item" onClick={()=>setCurrentNumber(index)}>
+            <div class="item" onClick={() => setCurrentNumber(index)}>
               <img src={item.img} />
               <div class="content">
                 <div class="title">Name Slider</div>
@@ -164,10 +163,10 @@ const ProductHero = () => {
         </div>
 
         <div class="arrows">
-          <button id="prev" onClick={prevSlide}>
+          <button id="prev" className="bg-orange-500  hover:bg-orange-700" onClick={prevSlide}>
             {"<"}
           </button>
-          <button id="next" onClick={nextSlide}>
+          <button id="next" className="bg-orange-500 hover:bg-orange-700"onClick={nextSlide}>
             {">"}
           </button>
         </div>

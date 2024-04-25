@@ -13,6 +13,8 @@ import Organizers from "./Pages/organizers";
 import ScrollToTop from "./ScrollTop";
 import Product from "./Pages/Product";
 import './style.css'
+import Contact from "./Pages/Contact";
+import Navbartest from "./Pages/test";
 // import './AppJs.js'
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -51,6 +53,8 @@ function App() {
           path="/blog/:id"
           element={<BlogDetail isDarkMode={isDarkMode} />}
         />
+        <Route path="/contact" element={<Contact isDarkMode={isDarkMode} />} />
+        <Route path="/test" element={<Navbartest isDarkMode={isDarkMode} />} />
         <Route path="/events" element={<Events isDarkMode={isDarkMode} />} />
         <Route path="/blog" element={<Blog isDarkMode={isDarkMode} />} />
         <Route path="/products" element={<Product isDarkMode={isDarkMode} />} />

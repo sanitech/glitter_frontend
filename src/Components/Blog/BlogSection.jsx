@@ -5,8 +5,8 @@ function BlogSection() {
     <div>
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Insights</h2>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">Stay in the know with insights from industry experts.</p>
+        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Insights</h2>
+        <p class="mt-1 text-gray-600 ">Stay in the know with insights from industry experts.</p>
       </div>
      
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -14,16 +14,16 @@ function BlogSection() {
         <a class="group" href="#">
           <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
             <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80" alt="Image Description"/>
-            <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900">
+            <span class="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 ">
               Sponsored
             </span>
           </div>
     
           <div class="mt-7">
-            <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
+            <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
               Studio by Preline
             </h3>
-            <p class="mt-3 text-gray-800 dark:text-neutral-200">
+            <p class="mt-3 text-gray-800 ">
               Produce professional, reliable streams easily leveraging Preline's innovative broadcast studio
             </p>
             <p class="mt-5 inline-flex items-center gap-x-1 text-blue-600 decoration-2 group-hover:underline font-medium">
@@ -41,10 +41,10 @@ function BlogSection() {
           </div>
     
           <div class="mt-7">
-            <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
+            <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 ">
               Onsite
             </h3>
-            <p class="mt-3 text-gray-800 dark:text-neutral-200">
+            <p class="mt-3 text-gray-800 ">
               Optimize your in-person experience with best-in-class capabilities like badge printing and lead retrieval
             </p>
             <p class="mt-5 inline-flex items-center gap-x-1 text-blue-600 decoration-2 group-hover:underline font-medium">

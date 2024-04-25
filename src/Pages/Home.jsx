@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Components/Navbar/Navbar'
-import back from '../assets/images/back.png'
 import Subscribe from '../Components/Subscribe/Subscribe'
 import Hero from '../Components/Hero/Hero'
 import CounterSection from '../Components/Counter/CounterSection'
@@ -22,20 +21,20 @@ import FeatureGs from '../Components/Feauter/FeatureGs'
 
 function Home({ isDarkMode }) {
   return (
-    <div className='w-full background absolute inset-0' >
+    <div className='w-full  background absolute inset-0' >
       <Hero />
       <FeatureSection/>
-      {/* <CardSlider/> */}
-      {/* <EventCards/> */}
       <EventCard2/>
       <Cat/>
-      <AboutSection/>
-     {/* <MyEventCards/> */}
+      
+      
       <BlogSection />
+      <AboutSection title={"Championing Trade and Investment"} img={"https://www.worldfinance.com/wp-content/uploads/2020/05/HYCM_Trading_mobile-632x474.jpg"} desc={"Glitter Trading is dedicated to advancing the trade and investment landscape of East Africa. We believe in the power of connectivity and collaboration, forging partnerships that transcend borders and connect businesses with opportunities across the continent and beyond. Our strategic focus on promoting East African trade aligns with our vision of fostering economic prosperity and sustainable development in the region."}/>
       <CounterSection />
-      <ContactSection />
+      <ContactSection/>
       <Partner />
       <Faq/>
+      <Subscribe/>
       <Footer />
 
     </div>

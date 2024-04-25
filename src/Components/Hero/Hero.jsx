@@ -1,24 +1,24 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import heroImg from "../../assets/images/hero.png";
 function Hero() {
   return (
     <div>
-      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 background">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-28">
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
           <div>
             <h1 class="block text-3xl font-bold text-gray-100 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
               Start your journey with{" "}
               <span class="text-orange-500">Glitter</span>
             </h1>
-            <p class="mt-3 text-lg text-gray-100 dark:text-neutral-400">
-              Hand-picked professionals and expertly crafted components,
-              designed for any kind of entrepreneur.
+            <p class="mt-3 text-lg text-gray-100 ">
+            Dreams Don't Come Real Just Because You Dream Them. It Is Hard Performance That Creates Change.
             </p>
 
             <div class="mt-7 grid gap-3 w-full sm:inline-flex">
               <a
-                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-orange-500 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                href="#"
+                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-orange-500 text-white hover:bg-orange-600 disabled:opacity-50 disabled:pointer-events-none"
+                href="#getStart"
               >
                 Get started
                 <svg
@@ -36,15 +36,15 @@ function Hero() {
                   <path d="m9 18 6-6-6-6" />
                 </svg>
               </a>
-              <a
-                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-900 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                href="#"
+              <Link
+                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-900 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                to="/contact"
               >
                 Contact sales team
-              </a>
+              </Link>
             </div>
 
-            <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
+            {/* <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
               <div class="py-5">
                 <div class="flex space-x-1">
                   <svg
@@ -252,20 +252,20 @@ function Hero() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div class="relative ms-4">
             <img
               class="w-full rounded-md"
-              src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
+              src={heroImg}
               alt="Image Description"
             />
             <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-neutral-800 dark:via-neutral-900/0 dark:to-neutral-900/0"></div>
 
             <div class="absolute bottom-0 start-0">
               <svg
-                class="w-2/3 ms-auto h-auto text-white dark:text-neutral-900"
+                class="w-2/3 ms-auto h-auto text-white"
                 width="630"
                 height="451"
                 viewBox="0 0 630 451"

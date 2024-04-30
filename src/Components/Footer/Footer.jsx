@@ -63,12 +63,10 @@ function Footer() {
               </div>
             </div>
 
-            <div class="col-span-1">
+            <div class="col-span-2 md:col-span-1 ">
               <h4 class="font-semibold text-gray-100">Contact</h4>
-
-              <div class="mt-3 grid space-y-3">
+              <div class="mt-3 grid  grid-cols-2 md:grid-cols-1 gap-4 md:gap-1 md:space-y-3 ">
                 <div className="flex flex-col">
-
                   <h4 class="font-semibold text-gray-100">Email</h4>
                   <p><a href="mailto:glitterpromotionone@gmail.com" class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" >Contact</a></p>
                 </div>
@@ -84,7 +82,6 @@ function Footer() {
                     H & M Building, Office No. 310
                   </address>
                 </div>
-
 
               </div>
             </div>

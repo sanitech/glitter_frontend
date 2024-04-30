@@ -49,7 +49,7 @@ const ProductHero = () => {
             className={"item"}
           >
             <img src={currentSlide.img} />
-            <div className="bg-blend-overlay w-full  h-screen bg-gradient-to-b from-gray-900/50 to-gray-500/50 py-20 px-20 ">
+            <div className="bg-blend-overlay w-full  h-screen bg-gradient-to-b from-gray-900/50 to-gray-500/50 py-20 px-24 ">
               <div class="content">
                 <div class="author">{currentSlide.author}</div>
                 <div class="title">{currentSlide.title}</div>

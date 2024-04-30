@@ -18,18 +18,31 @@ import Cat from '../Components/Cat/Cat'
 import Faq from '../Components/FAQ/Faq'
 import Footer from '../Components/Footer/Footer'
 import FeatureGs from '../Components/Feauter/FeatureGs'
+import collaboration from '../assets/images/collaboration.png'
+import WebsiteOpacityEffect from '../PaymentController'
 
 function Home({ isDarkMode }) {
+
   return (
     <div className='w-full  background absolute inset-0' >
       <Hero />
+      <WebsiteOpacityEffect paymentStatus={false} />
+
       <FeatureSection/>
       <EventCard2/>
       <Cat/>
       
       
       <BlogSection />
-      <AboutSection title={"Championing Trade and Investment"} img={"https://www.worldfinance.com/wp-content/uploads/2020/05/HYCM_Trading_mobile-632x474.jpg"} desc={"Glitter Trading is dedicated to advancing the trade and investment landscape of East Africa. We believe in the power of connectivity and collaboration, forging partnerships that transcend borders and connect businesses with opportunities across the continent and beyond. Our strategic focus on promoting East African trade aligns with our vision of fostering economic prosperity and sustainable development in the region."}/>
+      <AboutSection
+      title={"Driving Impact Through Collaboration"}
+      img={
+        collaboration
+      }
+      desc={
+        "Collaboration lies at the heart of our approach. By bringing together diverse stakeholders, including governments, private sectors, and corporate entities, we create synergies that drive meaningful impact. Through our comprehensive range of programs and initiatives, we facilitate knowledge exchange, capacity building, and market access, ultimately contributing to the realization of the African Continental Free Trade Area (AfCFTA) objectives and the empowerment of East African businesses, particularly women entrepreneurs and SMEs."
+      }
+    />
       <CounterSection />
       <ContactSection/>
       <Partner />

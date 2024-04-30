@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import SponsorsCard from './SponsersCard';
+import EventPricing from './EventPricing';
 
 const EventSponserPrice = ({selectedEvent}) => {
     const [sponsors, setSponsors] = useState([]);
@@ -26,19 +27,18 @@ const EventSponserPrice = ({selectedEvent}) => {
     
     return (
         <div className=' md:w-[84rem] m-auto py-10 px-8'>
-            <div className="flex justify-between items-baseline mb-16">
-
-                <div className="font-bold text-4xl z-30 text-gray-500">Organizers</div>
+            <div className="flex justify-end items-baseline mb-16">
+                {/* <div className="font-bold text-4xl z-30 text-gray-500">Organizers</div> */}
                 <div className="uppercase text-4xl md:text-9xl font-bold  text-gray-100  unselectable">Sponsorship</div>
 
             </div>
 
                 {/* <div class="bg-gradient-to-b from-pink-100 to-purple-200"> */}
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 transition-all duration-10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 transition-all duration-10">
                 {
                     sponsors?.map((sponsor, index) => {
                         return(
-                            <SponsorsCard sponsor={sponsor} key={index}/>
+                            <EventPricing sponsor={sponsor} />
                         )
                     })
                 }

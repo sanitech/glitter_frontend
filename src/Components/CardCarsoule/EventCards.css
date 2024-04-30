@@ -69,17 +69,16 @@
 .price {
     position: absolute;
     top: -20%;
-    left: 40px;
-   padding: 10px  15px;
-    background-color: #fff;
+    left: 30px;
+   /* padding: 10px  15px; */
+    /* background-color: #fff; */
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
-    font-size: 1.8em;
-    font-weight: bold;
-    letter-spacing: 2px;
+    /* font-size: 1.8em; */
+    letter-spacing: 1.2px;
 }
 
 .event-info::before {

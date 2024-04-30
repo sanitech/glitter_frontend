@@ -48,9 +48,9 @@ code {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    280deg,
+    to bottom,
     rgba(0, 0, 0, 0.807),
-      rgba(0, 0, 0, 0.871)
+      rgba(0, 0, 0, 0.397)
     );
 }
 

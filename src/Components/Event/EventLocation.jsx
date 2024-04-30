@@ -5,8 +5,8 @@ function EventLocation({ selectedEvent }) {
   console.log(eventLocation?.maps);
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative">
-      <div className="flex justify-between items-baseline mb-28">
-        <div className="font-bold text-4xl z-30">Location</div>
+      <div className="flex justify-end items-baseline mb-28">
+        {/* <div className="font-bold text-4xl z-30">Location</div> */}
         <div className="uppercase text-4xl md:text-9xl font-bold  text-gray-100  unselectable">
           Get Direction
         </div>
@@ -16,7 +16,7 @@ function EventLocation({ selectedEvent }) {
         <div className="md:w-1/3 flex flex-col gap-10">
           <div className=" shadow-lg relative py-12 px-10">
             <div className="card-title font-bold text-2xl mb-4">
-              Conference Location
+              Event Location
             </div>
             <div className="card-disc font-medium text-gray-600">
               {eventLocation?.location}

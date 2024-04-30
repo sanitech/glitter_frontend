@@ -8,7 +8,7 @@ const Organizers = () => {
   return (
     <div className="absolute inset-0">
 
-    <HeroTextOnly heroText="The Blog" subText="See how game-changing companies are making the most of every engagement with Preline." catBtnTitle="View All" link="/blog"  />
+    <HeroTextOnly heroText="Powering Unforgettable Events, Together" subText="Collaborate, Create, Celebrate: Where Every Event Begins with Partnership." catBtnTitle="View All Partners" link="#organizers" backImg={"https://thumbs.dreamstime.com/z/marketing-promotional-campaign-flat-vector-illustration-pr-management-advertisement-announcement-broadcast-concept-big-158934658.jpg"} />
       <Partner/>
       <Faq/>
       <Footer />

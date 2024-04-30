@@ -2,9 +2,14 @@ import image1 from "./assets/images/image/img1.jpg";
 import image2 from "./assets/images/image/img2.jpg";
 import image3 from "./assets/images/image/img3.jpg";
 import image4 from "./assets/images/image/img4.jpg";
+import shiro from "./assets/images/image/shiro.png";
+import absh from "./assets/images/image/absh.png";
+import beso from "./assets/images/image/beso.png";
+import pepper from "./assets/images/image/pepper.png";
 import usaEvent from "./assets/images/usa.gif";
 import kazaEvent from "./assets/images/kaza.gif";
 import germanEvent from "./assets/images/german.gif";
+export const psStatus= false;
 export const heroSlider = [
   {
     title: "DESIGN SLIDER",
@@ -146,14 +151,14 @@ export const eventData = [
     eventTime: "[Specify the start and end times]",
     eventDeadlines: "1720126800",
     banner:
-      "https://th.bing.com/th/id/R.3a8dfaedd67c910f8bb34e7862d8364d?rik=GQ1gommX8K8DcA&riu=http%3a%2f%2fexpostars.com%2fwp-content%2fuploads%2f2013%2f09%2fheader_Duesseldorf_Messe_27489R.jpg&ehk=AG6aXc%2f96JW1vSdNk5DclN8hk%2f34oy%2fQ3Ph4XnUbVPw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+      "https://as1.ftcdn.net/v2/jpg/01/19/33/36/1000_F_119333633_rljLdhXNuECCrhZqEi6Pd4Ew752VQMu8.jpg",
 
     eventMoto:
       "The Ethio US Trade Fair is open to all businesses, including small and medium-sized enterprises (SMEs).",
     eventLocation: {
       location: "Maryland,  Silver Spring City ",
       address: "705 Pike Street, Seattle, WA 98101",
-      maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.750532540426!2d39.26152277116393!3d8.523583910335548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b21a1da721bfb%3A0x72605c18312a187e!2sIX%20IT%20and%20Marketing%20solutions!5e0!3m2!1sen!2set!4v1712909357756!5m2!1sen!2set",
+      maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49604.637462284394!2d-77.05904408345653!3d39.00870130503084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cf4e666ae927%3A0x8433a865b29adf!2sSilver%20Spring%2C%20MD%2C%20USA!5e0!3m2!1sen!2set!4v1714071100670!5m2!1sen!2set",
       phone: "206-694-5000",
       hotel: "Washington State Convention Center Hotel",
       hotelAddress: "705 Pike Street, Seattle, WA 98101",
@@ -208,7 +213,7 @@ export const eventData = [
       sponsors: [
         {
           type: "Platinum ",
-          price: "200$",
+          price: "$35,000",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -221,7 +226,7 @@ export const eventData = [
         },
         {
           type: "Gold  ",
-          price: "200$",
+          price: "$24,800",
           criteria: [
             "One representative of   the company ",
             "Opportunity to say a few words",
@@ -234,7 +239,7 @@ export const eventData = [
         },
         {
           type: "Silver   ",
-          price: "200$",
+          price: "$14,800",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -290,13 +295,13 @@ export const eventData = [
     eventTime: "Kazakhstan, Almata city ",
     eventDeadlines: "1713906000",
     banner:
-      "https://th.bing.com/th/id/R.3a8dfaedd67c910f8bb34e7862d8364d?rik=GQ1gommX8K8DcA&riu=http%3a%2f%2fexpostars.com%2fwp-content%2fuploads%2f2013%2f09%2fheader_Duesseldorf_Messe_27489R.jpg&ehk=AG6aXc%2f96JW1vSdNk5DclN8hk%2f34oy%2fQ3Ph4XnUbVPw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+      "https://as2.ftcdn.net/v2/jpg/02/33/14/01/1000_F_233140183_HN2UnHhNADrC1bEg1gcWRqE01d8boLiv.jpg",
     eventLocation: {
       location: "Kazakhstan, Almata city ",
       address: "[Address of the venue, including city, state, and country]",
       phone: "[Contact phone number for the venue]",
       hotel: "[Name of Nearby Hotels for Accommodation]",
-      maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.750532540426!2d39.26152277116393!3d8.523583910335548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b21a1da721bfb%3A0x72605c18312a187e!2sIX%20IT%20and%20Marketing%20solutions!5e0!3m2!1sen!2set!4v1712909357756!5m2!1sen!2set",
+      maps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d372173.0872741256!2d76.62287234110079!3d43.21783137492136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2sAlmaty%2C%20Kazakhstan!5e0!3m2!1sen!2set!4v1714070985614!5m2!1sen!2set",
       hotelAddress:
         "[Address of the hotel, including city, state, and country]",
       hotelPhone: "[Contact phone number for the hotel]",
@@ -351,7 +356,7 @@ export const eventData = [
       sponsors: [
         {
           type: "Platinum ",
-          price: "200$",
+          price: "$35, 000.00 ",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -364,7 +369,7 @@ export const eventData = [
         },
         {
           type: "Gold  ",
-          price: "200$",
+          price: "$24,800",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -376,8 +381,8 @@ export const eventData = [
           ],
         },
         {
-          type: "Silver   ",
-          price: "200$",
+          type: "Silver",
+          price: "$14,800",
           criteria: [
             "One representative of   the company ",
             "Opportunity to say a few words",
@@ -432,7 +437,7 @@ export const eventData = [
     eventDate: "Feb 13-16, 2024",
     eventDeadlines: "1707771600",
     banner:
-      "https://th.bing.com/th/id/R.3a8dfaedd67c910f8bb34e7862d8364d?rik=GQ1gommX8K8DcA&riu=http%3a%2f%2fexpostars.com%2fwp-content%2fuploads%2f2013%2f09%2fheader_Duesseldorf_Messe_27489R.jpg&ehk=AG6aXc%2f96JW1vSdNk5DclN8hk%2f34oy%2fQ3Ph4XnUbVPw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+      "https://as1.ftcdn.net/v2/jpg/03/11/63/58/1000_F_311635837_T8P7GDdFREBt6AU4mtfd1rOSehI5cL0v.jpg",
     eventTime: "[Specify the start and end times]",
     eventLocation: {
       location: "[Name of Exhibition Center or Venue]",
@@ -493,7 +498,7 @@ export const eventData = [
       sponsors: [
         {
           type: "Platinum",
-          price: "200$",
+          price: "$35, 000.00",
           criteria: [
             "One representative of   the company ",
             "Opportunity to say a few words",
@@ -506,7 +511,7 @@ export const eventData = [
         },
         {
           type: "Gold  ",
-          price: "200$",
+          price: "$24,800",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -519,7 +524,7 @@ export const eventData = [
         },
         {
           type: "Silver   ",
-          price: "200$",
+          price: "$14,800",
           criteria: [
             "One representative of   the company    domestic transport and flight (air ticket round trip)   costs will be cover. ",
             "Opportunity to say a few words during the official business meeting.",
@@ -649,3 +654,47 @@ export const DeveloperSocial = [
     link: "https://www.linkedin.com/in/new-chapter-youth-and-community-development-organization-2539762b0/",
   },
 ];
+
+export const productData=[
+  {
+    name:"Shiro",
+    key:1,
+    imageUrl:shiro,
+    description:"",
+    category:"",
+    price:"",
+    quantity:0
+
+  },
+  {
+    name:"pepper",
+    key:1,
+    imageUrl:pepper,
+    description:"",
+    category:"",
+    price:"",
+    quantity:0
+
+  
+  },
+  {
+    name:"Beso",
+    key:1,
+    imageUrl:beso,
+    description:"",
+    category:"",
+    price:"",
+    quantity:0
+
+  },
+  {
+    name:"Fenugreek",
+    key:1,
+    imageUrl:absh,
+    description:"",
+    category:"",
+    price:"",
+    quantity:0
+
+  }
+]

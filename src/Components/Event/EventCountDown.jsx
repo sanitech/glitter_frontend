@@ -39,7 +39,7 @@ const EventCountDown = ({ targetDate }) => {
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center backdrop-blur-lg rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-white"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
-                {countDownTime?.days}
+                {countDownTime?.days<10?`0${countDownTime?.days}`:countDownTime?.days}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-white"></div>
             </div>
@@ -51,7 +51,7 @@ const EventCountDown = ({ targetDate }) => {
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center backdrop-blur-lg rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-white"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
-                {countDownTime?.hours}
+                {countDownTime?.hours<10?`0${countDownTime?.hours}`:countDownTime?.hours}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-white"></div>
             </div>
@@ -63,7 +63,7 @@ const EventCountDown = ({ targetDate }) => {
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center backdrop-blur-lg rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-white"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
-                {countDownTime?.minutes}
+                {countDownTime?.minutes<10?`0${countDownTime?.minutes}`:countDownTime?.minutes}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-white"></div>
             </div>
@@ -75,7 +75,7 @@ const EventCountDown = ({ targetDate }) => {
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center backdrop-blur-lg rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-white"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-white">
-                {countDownTime?.seconds}
+                {countDownTime?.seconds<10?`0${countDownTime?.seconds}`:countDownTime?.seconds}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-white"></div>
             </div>

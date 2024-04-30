@@ -8,7 +8,7 @@ import Footer from "../Components/Footer/Footer";
 const Blog = () => {
   return (
     <div className="absolute inset-0">
-      <HeroTextOnly heroText="The Blog" subText="See how game-changing companies are making the most of every engagement with Preline." catBtnTitle="View All" link="/blog"  />
+      <HeroTextOnly heroText="Unveiling Insights, Inspiring Ideas" subText="Exploring Every Angle, Sharing Every Story: Your Destination for Event Excellence." catBtnTitle="View All blogs" link="#allBlog" backImg={"https://thumbs.dreamstime.com/b/pr-public-relations-megaphone-vector-illustration-76496331.jpg"} />
       <AllBlog />
       <Faq />
       <Footer/>

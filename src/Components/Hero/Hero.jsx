@@ -16,11 +16,11 @@ function Hero() {
             </p>
 
             <div class="mt-7 grid gap-3 w-full sm:inline-flex">
-              <a
+              <Link
                 class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-orange-500 text-white hover:bg-orange-600 disabled:opacity-50 disabled:pointer-events-none"
-                href="#getStart"
+                to="/events"
               >
-                Get started
+              See Events
                 <svg
                   class="flex-shrink-0 size-4"
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,12 +35,12 @@ function Hero() {
                 >
                   <path d="m9 18 6-6-6-6" />
                 </svg>
-              </a>
+              </Link>
               <Link
                 class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-900 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
                 to="/contact"
               >
-                Contact sales team
+              Get promoted
               </Link>
             </div>
 

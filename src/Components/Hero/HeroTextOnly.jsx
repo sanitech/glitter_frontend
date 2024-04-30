@@ -1,13 +1,13 @@
 import React from "react";
 
-function HeroTextOnly({heroText, subText, catBtnTitle, link}) {
+function HeroTextOnly({heroText, subText, catBtnTitle, link,  backImg}) {
   return (
     <div>
-    <div className=" h-full  bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')]">
+    <div className={` h-full`} style={{backgroundImage: `url(${backImg})`, backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundSize:'cover', overflow:'hidden'}}>
     {/* <div className="overplay"> */}
-    <div className="bg-blend-overlay w-full  bg-gradient-to-r from-gray-900/90 to-gray-900/80 py-20 px-20 ">
+    <div className="bg-blend-overlay w-full  bg-gradient-to-b from-gray-900/90 to-gray-900/90 py-20 px-20 ">
 
-        <div class="bg-gradient-to-b from-amber-400/[.15] via-transparent">
+        {/* <div class="bg-gradient-to-b from-amber-400/[.15] via-transparent"> */}
           <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
             <div class="max-w-4xl text-center mx-auto">
               <h1 class="block font-medium text-gray-50 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
@@ -45,7 +45,7 @@ function HeroTextOnly({heroText, subText, catBtnTitle, link}) {
               </a>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
     </div>

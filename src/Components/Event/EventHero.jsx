@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import EventCountDown from "./EventCountDown";
 import { eventData } from "../../Data";
 import image4 from "../../assets/images/usa.gif";  
+import { Link } from "react-router-dom";
 
 // import './EventHero.css'
 function EventHero({selectedEvent}) {
@@ -20,7 +21,7 @@ function EventHero({selectedEvent}) {
               <p>
                 <span className="text-gray-50  font-bold">
                   Are you{" "}
-                  <strong className="text-orange-600 font-bold">ready</strong> to
+                  <a href={`#topic`} className="text-orange-600 font-bold">ready</a> to
                   attend?
                 </span> 
               </p>

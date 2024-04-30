@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const EventSingleCard = ({ scale, merge, zindex, event }) => {
 
-  const targetDate = new Date(event?.eventDeadlines* 1000);
+  const targetDate = new Date(event?.eventDeadlines * 1000);
   const calculateTimeLeft = () => {
     const difference = targetDate - new Date();
     let timeLeft = {};
-    
+
 
     if (difference > 0) {
       timeLeft = {
@@ -31,14 +32,33 @@ const EventSingleCard = ({ scale, merge, zindex, event }) => {
   });
   return (
     <div className="w-fit">
-      <div class={`e-card w-96  md:${scale} md:${merge} md:${zindex})]`} style={{backgroundImage: `url(${event?.banner})`}}>
+      <Link to={`/events/${event?.eventId}`} class={`e-card w-96  md:${scale} md:${merge} md:${zindex})]`} style={{ backgroundImage: `url(${event?.banner})` }}>
         <section class="top"></section>
         <div class="event-info">
           {
-            countDownTime?.days ==undefined ?(
-              <p class="price z-20 capitalize text-red-500">event timeOut</p>
-            ):
-            <p class="price z-20 text-gray-900"> {`${countDownTime?.days} : ${countDownTime?.hours<10 ? `0${countDownTime?.hours}` : countDownTime?.hours} : ${countDownTime?.minutes<10 ? `0${countDownTime?.minutes}` : countDownTime?.minutes} : ${countDownTime?.seconds} ` }</p> 
+            countDownTime?.days == undefined ? (
+              <p class="price z-20 capitalize text-gray-900 bg-red-100/80 text-2xl py-3 px-4 backdrop-blur-sm">Event expired</p>
+            ) :
+              <p class="price z-20 text-gray-900 gap-2">
+
+                <div className="flex flex-col items-center bg-white/30 py-3 px-2 backdrop-blur-lg uppercase">
+                  <span className="font-bold text-xl">{countDownTime?.days<10 ? `0${countDownTime?.days}` : countDownTime?.days}</span>
+                  <span className="text-sm" > {countDownTime?.days == 1 ? "Day" : "Days"}</span>
+                </div>
+                <div className="flex flex-col items-center bg-white/30 py-3 px-2 backdrop-blur-lg uppercase">
+                  <span className="font-bold text-xl"> {countDownTime?.hours<10 ? `0${countDownTime?.hours}` : countDownTime?.hours}</span>
+                  <span className="text-sm" > {countDownTime?.hours == 1 ? "Hour" : "Hours"}</span>
+                </div>
+                <div className="flex flex-col items-center bg-white/30 py-3 px-2 backdrop-blur-lg uppercase">
+                  <span className="font-bold text-xl">{countDownTime?.minutes<10 ? `0${countDownTime?.minutes}` : countDownTime?.minutes}</span>
+                  <span className="text-sm" >{countDownTime?.minutes == 1 ? "Minute" : "Minutes"}</span>
+                </div>
+                <div className="flex flex-col items-center bg-white/30 py-3 px-2 backdrop-blur-lg uppercase">
+                  <span className="font-bold text-xl"> {countDownTime?.seconds<10 ? `0${countDownTime?.seconds}` : countDownTime?.seconds}</span>
+                  <span className="text-sm" > {countDownTime?.seconds == 1 ? "Second" : "Seconds"}</span>
+                </div>
+
+              </p>
 
           }
           <p class="title line-clamp-1">{event.eventName}</p>
@@ -59,7 +79,7 @@ const EventSingleCard = ({ scale, merge, zindex, event }) => {
           </div>
           <button class="action whitespace-nowrap">View Details</button>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

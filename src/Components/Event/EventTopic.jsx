@@ -7,7 +7,7 @@ function EventTopic({ selectedEvent }) {
   const { eventGoals } = selectedEvent && selectedEvent;
 
   return (
-    <div className="event-topic relative">
+    <div className="event-topic relative" id="topic">
       <div
         className=" h-full "
         style={{

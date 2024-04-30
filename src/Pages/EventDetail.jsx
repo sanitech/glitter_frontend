@@ -34,6 +34,7 @@ function EventDetail() {
       <EventHero selectedEvent={selectedEvent} />
       <EventTopic selectedEvent={selectedEvent} />
       <EventSponserPrice selectedEvent={selectedEvent} />
+      
       <Partner selectedEvent={selectedEvent} />
       <EventLocation selectedEvent={selectedEvent} />
       <Faq />
